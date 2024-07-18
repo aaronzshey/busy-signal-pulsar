@@ -1,0 +1,100 @@
+- npm install
+npm warn deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.
+npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/vision	eslint@9.0.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+
+# npm audit report
+
+@babel/traverse  <7.23.2
+Severity: critical
+Babel vulnerable to arbitrary code execution when compiling specifically crafted malicious code - https://github.com/advisories/GHSA-67hx-6x53-jw92
+fix available via `npm audit fix`
+node_modules/@babel/traverse
+
+acorn  6.0.0 - 6.4.0
+Severity: high
+Regular Expression Denial of Service in Acorn - https://github.com/advisories/GHSA-6chw-6frg-f759
+fix available via `npm audit fix`
+node_modules/acorn
+
+ajv  <6.12.3
+Severity: moderate
+Prototype Pollution in Ajv - https://github.com/advisories/GHSA-v88g-cgmw-v5xw
+fix available via `npm audit fix`
+node_modules/ajv
+
+ansi-regex  3.0.0 || 4.0.0 - 4.1.0
+Severity: high
+Inefficient Regular Expression Complexity in chalk/ansi-regex - https://github.com/advisories/GHSA-93q8-gq69-wqmw
+Inefficient Regular Expression Complexity in chalk/ansi-regex - https://github.com/advisories/GHSA-93q8-gq69-wqmw
+fix available via `npm audit fix`
+node_modules/ansi-regex
+node_modules/inquirer/node_modules/ansi-regex
+
+debug  4.0.0 - 4.3.0
+Regular Expression Denial of Service in debug - https://github.com/advisories/GHSA-gxpj-cx7g-858c
+fix available via `npm audit fix`
+node_modules/debug
+
+eslint-utils  1.2.0 - 1.4.0
+Severity: critical
+Arbitrary Code Execution in eslint-utils - https://github.com/advisories/GHSA-3gx7-xhv7-5mx3
+fix available via `npm audit fix`
+node_modules/eslint-utils
+
+hosted-git-info  <2.8.9
+Severity: moderate
+Regular Expression Denial of Service in hosted-git-info - https://github.com/advisories/GHSA-43f8-2h32-f4cj
+fix available via `npm audit fix`
+node_modules/hosted-git-info
+
+js-yaml  <=3.13.0
+Severity: high
+Denial of Service in js-yaml - https://github.com/advisories/GHSA-2pr6-76vf-7546
+Code Injection in js-yaml - https://github.com/advisories/GHSA-8j8c-7jfh-h6hx
+fix available via `npm audit fix`
+node_modules/js-yaml
+
+lodash  <=4.17.20
+Severity: critical
+Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-29mw-wpgm-hmr9
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-p6mc-m468-83gw
+Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-jf85-cpcp-j695
+fix available via `npm audit fix`
+node_modules/eslint-plugin-flowtype/node_modules/lodash
+node_modules/lodash
+
+minimatch  <3.0.5
+Severity: high
+minimatch ReDoS vulnerability - https://github.com/advisories/GHSA-f8q6-p94x-37v3
+fix available via `npm audit fix`
+node_modules/minimatch
+
+minimist  <=0.2.3
+Severity: critical
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-vh95-rmgr-6w4m
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-xvch-5gv4-984h
+fix available via `npm audit fix`
+node_modules/minimist
+  mkdirp  0.4.1 - 0.5.1
+  Depends on vulnerable versions of minimist
+  node_modules/mkdirp
+
+path-parse  <1.0.7
+Severity: moderate
+Regular Expression Denial of Service in path-parse - https://github.com/advisories/GHSA-hj48-42vr-x3v9
+fix available via `npm audit fix`
+node_modules/path-parse
+
+semver  <5.7.2
+Severity: moderate
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix`
+node_modules/semver
+
+14 vulnerabilities (1 low, 5 moderate, 4 high, 4 critical)
+
+To address all issues, run:
+  npm audit fix
